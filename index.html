@@ -10,33 +10,36 @@
 <body>
     
     <div class="principal">
-        <form action="#" name="calculadora">
-            <input type="text" class="text mainColor" name="text1" disabled="">
-            <input type="text" class=" text mainColor" name="12" value="c" onclick="location.reload()"> <br> <!-- aqui que vai fazer o reload do visor e deixar o campo vazio-->
+
+        <form action="" name="Calculator" class="calculadora">
+
+            <input type="text" class="text1 " id="viewNunber"   disabled="">
+            <input type="text" class="text2" name="text12" value="c" onclick="location.reload()"> <br> <!-- aqui que vai fazer o reload do visor e deixar o campo vazio-->
 
             <input type="button" class="nun mainColor" name="btn9" value="9" onclick="displayNun(btn9.value)"> 
             <input type="button" class="nun mainColor" name="btn8" value="8" onclick="displayNun(btn8.value)"> 
             <input type="button" class="nun mainColor" name="btn7" value="7" onclick="displayNun(btn7.value)"> 
-            <input type="button" class="nun blue" name="addBtn" value="+" onclick="displayNun(addBtn.value)"> <br>
+            <input type="button" class=" nun gold" name="addBtn" value="+" onclick="displayNun(addBtn.value)"> <br>
 
             <input type="button" class="nun mainColor" name="btn6" value="6" onclick="displayNun(btn6.value)">
             <input type="button" class="nun mainColor" name="btn5" value="5" onclick="displayNun(btn5.value)">
             <input type="button" class="nun mainColor" name="btn4" value="4" onclick="displayNun(btn4.value)">
-            <input type="button" class="nunred" name="subBtn" value="-" onclick="displayNun(subBtn.value)"><br>
+            <input type="button" class="nun gold" name="subBtn" value="-" onclick="displayNun(subBtn.value)"><br>
 
             <input type="button" class="nun mainColor" name="btn3" value="3" onclick="displayNun(btn3.value)">
             <input type="button" class="nun mainColor" name="btn2" value="2" onclick="displayNun(btn2.value)">
             <input type="button" class="nun mainColor" name="btn1" value="1" onclick="displayNun(btn1.value)">
-            <input type="button" class="numyellow" name="multBtn" value="*" onclick="displayNun(multBtn.value)"><br>
+            <input type="button" class="nun gold" name="multBtn" value="*" onclick="displayNun(multBtn.value)"><br>
 
-            <input type="button" class="nun mainColor" name="dotBtn" value="." onclick="displayNun(dotbtn)">
+            <input type="button" class="nun gold" name="btndot" value="," onclick="displayNun(btndot.value)">
             <input type="button" class="nun mainColor" name="btn0" value="0" onclick="displayNun(btn0.value)">
-            <input type="button" class="nun equal" name="btnEqual" value="=" onclick="displayNun(btnEqual.value)">
-            <input type="button" class="nun div" name="btnDiv" value="/" onclick="displayNun(btnDiv.value)"><br>
+            <input type="button" class="nun equal gold" name="btnEqual" value="=" onclick="calcular()">
+            <input type="button" class="nun gold" name="btnDiv" value="/" onclick="displayNun(btnDiv.value)"><br>
 
 
         </form>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
